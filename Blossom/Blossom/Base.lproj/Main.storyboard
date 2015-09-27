@@ -386,10 +386,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f4p-KG-efe">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="570"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M6p-f3-vnw">
-                                    <size key="itemSize" width="600" height="544"/>
+                                    <size key="itemSize" width="600" height="570"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -399,51 +399,54 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="544"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="570"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kdb-a7-QI0">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kdb-a7-QI0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="267"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AED 250" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBs-Nu-4aK">
-                                                    <rect key="frame" x="0.0" y="337" width="600" height="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="AED 250" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBs-Nu-4aK">
+                                                    <rect key="frame" x="0.0" y="347" width="600" height="15"/>
                                                     <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12 Red Roses,7 White Orchids &amp; Filter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aD-TY-oDk">
-                                                    <rect key="frame" x="0.0" y="373" width="600" height="33"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12 Red Roses,7 White Orchids &amp; Filter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aD-TY-oDk">
+                                                    <rect key="frame" x="0.0" y="372" width="600" height="24"/>
                                                     <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Cooper" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxb-gA-9OC">
-                                                    <rect key="frame" x="0.0" y="314" width="600" height="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Cooper" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxb-gA-9OC">
+                                                    <rect key="frame" x="0.0" y="316" width="600" height="25"/>
                                                     <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dividerLine" translatesAutoresizingMaskIntoConstraints="NO" id="keQ-4o-xzo">
-                                                    <rect key="frame" x="44" y="363" width="510" height="2"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dividerLine" translatesAutoresizingMaskIntoConstraints="NO" id="keQ-4o-xzo">
+                                                    <rect key="frame" x="44" y="369" width="510" height="2"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRx-eG-GmN">
-                                                    <rect key="frame" x="16" y="488" width="568" height="50"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRx-eG-GmN">
+                                                    <rect key="frame" x="16" y="518" width="568" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="L1Q-ZL-4to"/>
+                                                    </constraints>
                                                     <state key="normal" backgroundImage="selectFlowersButton">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello there is some some flower details which we want to show up 12 Red Roses,7 White Orchids &amp; Filter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcB-rS-3Cw">
-                                                    <rect key="frame" x="0.0" y="414" width="600" height="67"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello there is some some flower details which we want to show up 12 Red Roses,7 White Orchids &amp; Filter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcB-rS-3Cw">
+                                                    <rect key="frame" x="0.0" y="408" width="600" height="67"/>
                                                     <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="navigationbar_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nBy-gr-rEj">
-                                                    <rect key="frame" x="270" y="270" width="62" height="60"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigationbar_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nBy-gr-rEj">
+                                                    <rect key="frame" x="280" y="265" width="40" height="40"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="SEH-iS-xkR"/>
-                                                        <constraint firstAttribute="width" constant="62" id="xcs-qz-jG8"/>
+                                                        <constraint firstAttribute="width" constant="40" id="it6-gE-BH1"/>
+                                                        <constraint firstAttribute="height" constant="40" id="tRg-TG-jqc"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -456,10 +459,32 @@
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="centerX" secondItem="nBy-gr-rEj" secondAttribute="centerX" id="kRA-tq-jt3"/>
-                                            <constraint firstAttribute="centerY" secondItem="nBy-gr-rEj" secondAttribute="centerY" id="ps6-h6-b98"/>
+                                            <constraint firstAttribute="centerY" secondItem="nBy-gr-rEj" secondAttribute="centerY" id="0J7-KS-iCz"/>
+                                            <constraint firstAttribute="centerX" secondItem="nBy-gr-rEj" secondAttribute="centerX" id="3Yb-kk-PpN"/>
+                                            <constraint firstItem="Kxb-gA-9OC" firstAttribute="top" secondItem="nBy-gr-rEj" secondAttribute="bottom" constant="11" id="7Xu-V5-qKb"/>
+                                            <constraint firstItem="Kxb-gA-9OC" firstAttribute="leading" secondItem="p3n-fQ-Ra1" secondAttribute="leading" id="7dp-DS-w3x"/>
+                                            <constraint firstItem="xcB-rS-3Cw" firstAttribute="leading" secondItem="p3n-fQ-Ra1" secondAttribute="leading" id="9rm-Js-vUY"/>
+                                            <constraint firstAttribute="bottom" secondItem="bRx-eG-GmN" secondAttribute="bottom" constant="12" id="AkY-Wq-72y"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kxb-gA-9OC" secondAttribute="trailing" id="CYx-wr-YCo"/>
+                                            <constraint firstAttribute="trailing" secondItem="bRx-eG-GmN" secondAttribute="trailing" constant="16" id="Dlh-rf-QAd"/>
+                                            <constraint firstItem="bRx-eG-GmN" firstAttribute="leading" secondItem="p3n-fQ-Ra1" secondAttribute="leading" constant="16" id="GWz-Yz-cTX"/>
+                                            <constraint firstItem="keQ-4o-xzo" firstAttribute="leading" secondItem="p3n-fQ-Ra1" secondAttribute="leading" constant="44" id="N3N-Hf-4wa"/>
+                                            <constraint firstItem="Kdb-a7-QI0" firstAttribute="leading" secondItem="p3n-fQ-Ra1" secondAttribute="leading" id="Pnl-r4-sbB"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kdb-a7-QI0" secondAttribute="trailing" id="Sxe-wf-jH5"/>
+                                            <constraint firstAttribute="trailing" secondItem="keQ-4o-xzo" secondAttribute="trailing" constant="46" id="TzS-Kq-WxJ"/>
+                                            <constraint firstItem="keQ-4o-xzo" firstAttribute="top" secondItem="TBs-Nu-4aK" secondAttribute="bottom" constant="7" id="VH8-EK-VMO"/>
+                                            <constraint firstItem="nBy-gr-rEj" firstAttribute="top" secondItem="Kdb-a7-QI0" secondAttribute="bottom" constant="-2" id="WZV-hP-62v"/>
+                                            <constraint firstAttribute="trailing" secondItem="TBs-Nu-4aK" secondAttribute="trailing" id="c4o-0A-qR8"/>
+                                            <constraint firstAttribute="trailing" secondItem="xcB-rS-3Cw" secondAttribute="trailing" id="ezE-4R-SQj"/>
+                                            <constraint firstItem="Kdb-a7-QI0" firstAttribute="top" secondItem="p3n-fQ-Ra1" secondAttribute="top" id="hMF-IW-KRS"/>
+                                            <constraint firstItem="9aD-TY-oDk" firstAttribute="top" secondItem="keQ-4o-xzo" secondAttribute="bottom" constant="1" id="iuI-9P-oiT"/>
+                                            <constraint firstItem="xcB-rS-3Cw" firstAttribute="top" secondItem="9aD-TY-oDk" secondAttribute="bottom" constant="12" id="kEO-hH-yMA"/>
+                                            <constraint firstItem="TBs-Nu-4aK" firstAttribute="leading" secondItem="p3n-fQ-Ra1" secondAttribute="leading" id="kLZ-qf-JiZ"/>
+                                            <constraint firstItem="TBs-Nu-4aK" firstAttribute="top" secondItem="Kxb-gA-9OC" secondAttribute="bottom" constant="6" id="qmQ-yx-hHg"/>
+                                            <constraint firstAttribute="trailing" secondItem="9aD-TY-oDk" secondAttribute="trailing" id="rcN-fw-sTO"/>
+                                            <constraint firstItem="9aD-TY-oDk" firstAttribute="leading" secondItem="p3n-fQ-Ra1" secondAttribute="leading" id="tTI-x0-92n"/>
                                         </constraints>
-                                        <size key="customSize" width="600" height="544"/>
+                                        <size key="customSize" width="600" height="570"/>
                                         <connections>
                                             <outlet property="btnSelectFlower" destination="bRx-eG-GmN" id="Ik7-en-N91"/>
                                             <outlet property="ivFlowerImg" destination="Kdb-a7-QI0" id="PvX-jQ-yme"/>
@@ -475,12 +500,6 @@
                                     <outlet property="delegate" destination="ePN-pX-en8" id="ebI-a7-1pg"/>
                                 </connections>
                             </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Heg-Et-iJq">
-                                <rect key="frame" x="269" y="551" width="63" height="37"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D87-FJ-67m">
                                 <rect key="frame" x="16" y="29" width="25" height="20"/>
                                 <state key="normal" backgroundImage="backButton">
@@ -490,6 +509,12 @@
                                     <action selector="btnBackTap:" destination="ePN-pX-en8" eventType="touchUpInside" id="h64-uu-djb"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Heg-Et-iJq">
+                                <rect key="frame" x="269" y="566" width="63" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -497,8 +522,8 @@
                             <constraint firstItem="f4p-KG-efe" firstAttribute="top" secondItem="8Og-Mm-TNV" secondAttribute="top" id="DLS-Gj-dFJ"/>
                             <constraint firstAttribute="centerX" secondItem="Heg-Et-iJq" secondAttribute="centerX" id="EaQ-Sk-pdV"/>
                             <constraint firstItem="f4p-KG-efe" firstAttribute="leading" secondItem="8Og-Mm-TNV" secondAttribute="leading" id="cPT-aX-glE"/>
-                            <constraint firstItem="Wdr-xb-yMh" firstAttribute="top" secondItem="Heg-Et-iJq" secondAttribute="bottom" constant="12" id="nNE-Un-iSJ"/>
-                            <constraint firstAttribute="bottom" secondItem="f4p-KG-efe" secondAttribute="bottom" id="oiv-xC-rbg"/>
+                            <constraint firstItem="Wdr-xb-yMh" firstAttribute="top" secondItem="Heg-Et-iJq" secondAttribute="bottom" constant="-3" id="nNE-Un-iSJ"/>
+                            <constraint firstAttribute="bottom" secondItem="f4p-KG-efe" secondAttribute="bottom" constant="30" id="oiv-xC-rbg"/>
                         </constraints>
                     </view>
                     <connections>

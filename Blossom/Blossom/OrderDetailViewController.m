@@ -35,7 +35,7 @@
         [flowerDict setObject:@"The Cooper" forKey:@"flowerHeader"];
         [flowerDict setObject:@"AED250" forKey:@"flowerSubHeader"];
         [flowerDict setObject:@"12 red roses and 15 white roses" forKey:@"flowerTitle"];
-        [flowerDict setObject:@"flower are perfect for every lund-piky" forKey:@"flowerDesc"];
+        [flowerDict setObject:@"flower are perfect for everyone again flower are perfect for everyone" forKey:@"flowerDesc"];
         [flowerArr addObject:flowerDict];
     }
 }
@@ -55,6 +55,7 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     OrderDetailCell *cell = (OrderDetailCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    
     cell.ivFlowerImg.image=[UIImage imageNamed:[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"flowerImg"]];
     cell.lblFlowerHeader.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"flowerHeader"];
     cell.lblFlowerSubHeader.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"flowerSubHeader"];
@@ -79,22 +80,20 @@
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     if (IS_IPHONE_5) {
         
-         [flowLayout setItemSize:CGSizeMake(320, 550)];
+         [flowLayout setItemSize:CGSizeMake(320, 520)];
         
     }else if(IS_IPHONE_6)
     {
-        [flowLayout setItemSize:CGSizeMake(375, 650)];
+        [flowLayout setItemSize:CGSizeMake(375, 620)];
     }
     else if(IS_IPHONE_6P)
     {
-        [flowLayout setItemSize:CGSizeMake(414, 716)];
+        [flowLayout setItemSize:CGSizeMake(414, 690)];
     }else
     {
-        [flowLayout setItemSize:CGSizeMake(320, 460)];
+        [flowLayout setItemSize:CGSizeMake(320, 430)];
     }
-
-   
-        
+    
     [flowLayout setSectionInset:UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0)];
     [flowLayout setMinimumLineSpacing:0.0];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];

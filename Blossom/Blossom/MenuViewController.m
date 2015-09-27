@@ -56,19 +56,19 @@
     }
     else if(indexPath.row==1)
     {
-        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"OrderHistoryViewController"]]
+        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"OrderViewController"]]
                                                      animated:YES];
         [self.sideMenuViewController hideMenuViewController];
     }
     else if(indexPath.row==2)
     {
-        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"ProfileViewController"]]
+        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"OrderViewController"]]
                                                      animated:YES];
         [self.sideMenuViewController hideMenuViewController];
     }
     else if(indexPath.row==3)
     {
-        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"GetInTouchViewController"]]
+        [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"OrderViewController"]]
                                                      animated:YES];
         [self.sideMenuViewController hideMenuViewController];
     }
