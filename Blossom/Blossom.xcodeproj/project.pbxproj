@@ -14,7 +14,6 @@
 		338AEF2A1BB59C8500B10F9F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338AEF291BB59C8500B10F9F /* MenuViewController.m */; };
 		338AEF331BB5C06500B10F9F /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 338AEF321BB5C06500B10F9F /* MenuCell.m */; };
 		338AEF361BB5DBA200B10F9F /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338AEF351BB5DBA200B10F9F /* ThemeViewController.m */; };
-		33E5E15B1BB65E9300C12E52 /* app.png in Resources */ = {isa = PBXBuildFile; fileRef = 33E5E15A1BB65E9300C12E52 /* app.png */; };
 		33E5E15E1BB6648800C12E52 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E5E15D1BB6648800C12E52 /* OrderCell.m */; };
 		33E71B091BB7090E0090FF3A /* OrderHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E71B081BB7090E0090FF3A /* OrderHistoryViewController.m */; };
 		33FBB51F1BB48C6800918C0A /* SideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FBB51E1BB48C6800918C0A /* SideBarController.m */; };
@@ -59,7 +58,6 @@
 		338AEF321BB5C06500B10F9F /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
 		338AEF341BB5DBA200B10F9F /* ThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeViewController.h; sourceTree = "<group>"; };
 		338AEF351BB5DBA200B10F9F /* ThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeViewController.m; sourceTree = "<group>"; };
-		33E5E15A1BB65E9300C12E52 /* app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app.png; sourceTree = "<group>"; };
 		33E5E15C1BB6648800C12E52 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
 		33E5E15D1BB6648800C12E52 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
 		33E71B071BB7090E0090FF3A /* OrderHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryViewController.h; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 		338AEF1B1BB599BC00B10F9F /* RESideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				33E5E15A1BB65E9300C12E52 /* app.png */,
 				338AEF1C1BB599D300B10F9F /* RECommonFunctions.h */,
 				338AEF1D1BB599D300B10F9F /* RECommonFunctions.m */,
 				338AEF1E1BB599D300B10F9F /* RESideMenu.h */,
@@ -348,7 +345,6 @@
 				7DF0E3651BB336E900F5BEB2 /* Quicksand-Light.ttf in Resources */,
 				7D19CBF71BB059B700DE25E7 /* LaunchScreen.xib in Resources */,
 				7D19CBF41BB059B700DE25E7 /* Images.xcassets in Resources */,
-				33E5E15B1BB65E9300C12E52 /* app.png in Resources */,
 				7DF0E3671BB336E900F5BEB2 /* Quicksand-Regular.ttf in Resources */,
 				7DF0E3621BB336E900F5BEB2 /* Quicksand-Bold.ttf in Resources */,
 			);
