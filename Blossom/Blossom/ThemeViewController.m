@@ -29,9 +29,9 @@
 -(void)setUpNavigationBar
 {
     UIButton *btnBack=[UIButton buttonWithType:UIButtonTypeCustom];
-    btnBack.frame=CGRectMake(0, 0, 30, 35);
     [btnBack setImage:[UIImage imageNamed:@"backButton"] forState:UIControlStateNormal];
     [btnBack setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    btnBack.frame=CGRectMake(0, 0, 40, 40);
     [btnBack addTarget:self action:@selector(btnBackTap) forControlEvents:UIControlEventTouchUpInside];
     btnBackBar=[[UIBarButtonItem alloc]initWithCustomView:btnBack];
     self.navigationItem.leftBarButtonItem=btnBackBar;

@@ -8,6 +8,7 @@
 
 #import "OrderHistoryViewController.h"
 #import "Header.h"
+
 @interface OrderHistoryViewController ()
 {
     UIBarButtonItem *btnHistoryBar;
@@ -31,7 +32,7 @@
     UIButton *btnOrderHistory=[UIButton buttonWithType:UIButtonTypeCustom];
     [btnOrderHistory setTitle:BTNORDER_HISTORY forState:UIControlStateNormal];
     [btnOrderHistory setImage:[UIImage imageNamed:@"menuIcon"] forState:UIControlStateNormal];
-    [btnOrderHistory setTitleColor:[UIColor colorWithRed:231.0/255.0 green:106.0/255.0 blue:79.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+    [btnOrderHistory setTitleColor:[UIColor colorWithRed:255.0/255.0 green:129.0/255.0 blue:97.0/255.0 alpha:1.0] forState:UIControlStateNormal];
     [btnOrderHistory setFont:[UIFont fontWithName:FONT_REGULAR size:17]];
     [btnOrderHistory addTarget:self action:@selector(btnOrderHistoryTap:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -42,17 +43,16 @@
     UIButton *btnClearAll=[UIButton buttonWithType:UIButtonTypeCustom];
     [btnClearAll setTitle:
                  BTNCLEAR_ALL forState:UIControlStateNormal];
-    [btnClearAll setImage:[UIImage imageNamed:@"menuIcon"] forState:UIControlStateNormal];
-    [btnClearAll setTitleColor:[UIColor colorWithRed:231.0/255.0 green:106.0/255.0 blue:79.0/255.0 alpha:1.0] forState:UIControlStateNormal];
+    [btnClearAll setTitleColor:[UIColor colorWithRed:255.0/255.0 green:129.0/255.0 blue:97.0/255.0 alpha:1.0] forState:UIControlStateNormal];
     [btnClearAll setFont:[UIFont fontWithName:FONT_REGULAR size:17]];
     [btnClearAll addTarget:self action:@selector(btnClearAllTap) forControlEvents:UIControlEventTouchUpInside];
     
     btnClearAllBar=[[UIBarButtonItem alloc]initWithCustomView:btnClearAll];
     btnClearAll.frame=CGRectMake(0, 0, 95, 35);
-    self.navigationItem.leftBarButtonItem=btnClearAllBar;
+    self.navigationItem.rightBarButtonItem=btnClearAllBar;
     
-    UIImageView *ivBarLogo=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"logo_small"]];
-    ivBarLogo.backgroundColor=[UIColor orangeColor];
+    UIImageView *ivBarLogo=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"navigationbar_logo"]];
+   
     ivBarLogo.contentMode=UIViewContentModeScaleAspectFit;
     self.navigationItem.titleView=ivBarLogo;
 }

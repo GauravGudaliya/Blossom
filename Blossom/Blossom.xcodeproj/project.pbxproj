@@ -16,6 +16,10 @@
 		338AEF361BB5DBA200B10F9F /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338AEF351BB5DBA200B10F9F /* ThemeViewController.m */; };
 		33E5E15E1BB6648800C12E52 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E5E15D1BB6648800C12E52 /* OrderCell.m */; };
 		33E71B091BB7090E0090FF3A /* OrderHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E71B081BB7090E0090FF3A /* OrderHistoryViewController.m */; };
+		33E8D31F1BB79DB800F39B8A /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E8D31E1BB79DB800F39B8A /* ProfileViewController.m */; };
+		33E8D3221BB7BBFA00F39B8A /* GetInTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E8D3211BB7BBFA00F39B8A /* GetInTouchViewController.m */; };
+		33E8D3251BB7C5A000F39B8A /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E8D3241BB7C5A000F39B8A /* OrderDetailViewController.m */; };
+		33E8D3291BB7CF7700F39B8A /* OrderDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E8D3281BB7CF7700F39B8A /* OrderDetailCell.m */; };
 		33FBB51F1BB48C6800918C0A /* SideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FBB51E1BB48C6800918C0A /* SideBarController.m */; };
 		7D19CBE91BB059B700DE25E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D19CBE81BB059B700DE25E7 /* main.m */; };
 		7D19CBEC1BB059B700DE25E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D19CBEB1BB059B700DE25E7 /* AppDelegate.m */; };
@@ -62,6 +66,14 @@
 		33E5E15D1BB6648800C12E52 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
 		33E71B071BB7090E0090FF3A /* OrderHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHistoryViewController.h; sourceTree = "<group>"; };
 		33E71B081BB7090E0090FF3A /* OrderHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHistoryViewController.m; sourceTree = "<group>"; };
+		33E8D31D1BB79DB800F39B8A /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		33E8D31E1BB79DB800F39B8A /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		33E8D3201BB7BBFA00F39B8A /* GetInTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInTouchViewController.h; sourceTree = "<group>"; };
+		33E8D3211BB7BBFA00F39B8A /* GetInTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInTouchViewController.m; sourceTree = "<group>"; };
+		33E8D3231BB7C5A000F39B8A /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		33E8D3241BB7C5A000F39B8A /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		33E8D3271BB7CF7700F39B8A /* OrderDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailCell.h; sourceTree = "<group>"; };
+		33E8D3281BB7CF7700F39B8A /* OrderDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailCell.m; sourceTree = "<group>"; };
 		33FBB51D1BB48C6800918C0A /* SideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarController.h; sourceTree = "<group>"; };
 		33FBB51E1BB48C6800918C0A /* SideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarController.m; sourceTree = "<group>"; };
 		7D176D9E1BB45CA500E88270 /* Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
@@ -141,6 +153,15 @@
 			name = OrderView;
 			sourceTree = "<group>";
 		};
+		33E8D3261BB7CED000F39B8A /* OrderDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				33E8D3271BB7CF7700F39B8A /* OrderDetailCell.h */,
+				33E8D3281BB7CF7700F39B8A /* OrderDetailCell.m */,
+			);
+			name = OrderDetailView;
+			sourceTree = "<group>";
+		};
 		7D19CBDA1BB059B700DE25E7 = {
 			isa = PBXGroup;
 			children = (
@@ -171,14 +192,20 @@
 				7D19CBEE1BB059B700DE25E7 /* IntroScreenController.m */,
 				33FBB51D1BB48C6800918C0A /* SideBarController.h */,
 				33FBB51E1BB48C6800918C0A /* SideBarController.m */,
-				338AEF251BB59C5E00B10F9F /* OrderViewController.h */,
-				338AEF261BB59C5E00B10F9F /* OrderViewController.m */,
 				338AEF281BB59C8500B10F9F /* MenuViewController.h */,
 				338AEF291BB59C8500B10F9F /* MenuViewController.m */,
+				338AEF251BB59C5E00B10F9F /* OrderViewController.h */,
+				338AEF261BB59C5E00B10F9F /* OrderViewController.m */,
+				33E8D3231BB7C5A000F39B8A /* OrderDetailViewController.h */,
+				33E8D3241BB7C5A000F39B8A /* OrderDetailViewController.m */,
 				338AEF341BB5DBA200B10F9F /* ThemeViewController.h */,
 				338AEF351BB5DBA200B10F9F /* ThemeViewController.m */,
 				33E71B071BB7090E0090FF3A /* OrderHistoryViewController.h */,
 				33E71B081BB7090E0090FF3A /* OrderHistoryViewController.m */,
+				33E8D31D1BB79DB800F39B8A /* ProfileViewController.h */,
+				33E8D31E1BB79DB800F39B8A /* ProfileViewController.m */,
+				33E8D3201BB7BBFA00F39B8A /* GetInTouchViewController.h */,
+				33E8D3211BB7BBFA00F39B8A /* GetInTouchViewController.m */,
 				7D19CBF01BB059B700DE25E7 /* Main.storyboard */,
 				7D19CBF31BB059B700DE25E7 /* Images.xcassets */,
 				7D19CBF51BB059B700DE25E7 /* LaunchScreen.xib */,
@@ -229,6 +256,7 @@
 		7D868F891BB32BCC0005F13B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				33E8D3261BB7CED000F39B8A /* OrderDetailView */,
 				33E71B061BB6E96D0090FF3A /* OrderView */,
 				338AEF301BB5BE8B00B10F9F /* MenuView */,
 				7D868F8A1BB32BD20005F13B /* CollectionView */,
@@ -367,7 +395,9 @@
 				33FBB51F1BB48C6800918C0A /* SideBarController.m in Sources */,
 				33E5E15E1BB6648800C12E52 /* OrderCell.m in Sources */,
 				338AEF241BB599D300B10F9F /* UIViewController+RESideMenu.m in Sources */,
+				33E8D3291BB7CF7700F39B8A /* OrderDetailCell.m in Sources */,
 				338AEF361BB5DBA200B10F9F /* ThemeViewController.m in Sources */,
+				33E8D31F1BB79DB800F39B8A /* ProfileViewController.m in Sources */,
 				338AEF221BB599D300B10F9F /* RECommonFunctions.m in Sources */,
 				7D19CBEF1BB059B700DE25E7 /* IntroScreenController.m in Sources */,
 				338AEF331BB5C06500B10F9F /* MenuCell.m in Sources */,
@@ -375,8 +405,10 @@
 				7D19CBEC1BB059B700DE25E7 /* AppDelegate.m in Sources */,
 				7D868F881BB32BC80005F13B /* IntroCell.m in Sources */,
 				7D19CBE91BB059B700DE25E7 /* main.m in Sources */,
+				33E8D3251BB7C5A000F39B8A /* OrderDetailViewController.m in Sources */,
 				338AEF231BB599D300B10F9F /* RESideMenu.m in Sources */,
 				33E71B091BB7090E0090FF3A /* OrderHistoryViewController.m in Sources */,
+				33E8D3221BB7BBFA00F39B8A /* GetInTouchViewController.m in Sources */,
 				338AEF2A1BB59C8500B10F9F /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

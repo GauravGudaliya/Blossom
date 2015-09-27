@@ -7,22 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9B3FBE44-0DAD-4A6D-9834-A213BE5E2785</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Blossom</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7AA6DBD299BDE83064C905C78FD9E639CF4DFCE4</key>
 		<string>https://github.com/GauravGudaliya/Blossom.git</string>
-		<key>FFE705D5E657749DC2165E02EAE618EF8EBEA70C</key>
-		<string>https://github.com/mohitodhrani/Blossom-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Blossom/Blossom.xcodeproj</string>
+	<string>Blossom/Blossom.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7AA6DBD299BDE83064C905C78FD9E639CF4DFCE4</key>
 		<string>../../..</string>
-		<key>FFE705D5E657749DC2165E02EAE618EF8EBEA70C</key>
-		<string>../../../../Blossom</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/GauravGudaliya/Blossom.git</string>
@@ -32,14 +28,6 @@
 	<string>7AA6DBD299BDE83064C905C78FD9E639CF4DFCE4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FFE705D5E657749DC2165E02EAE618EF8EBEA70C</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Blossom</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

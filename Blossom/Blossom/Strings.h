@@ -25,6 +25,8 @@
 #define BTNTHEME_TITLE @" Theme"
 #define BTNORDER_HISTORY @"  History"
 #define BTNCLEAR_ALL @" Clear All"
+#define BTNPROFILE @"  Profile"
+#define BTNGETINTOUCH @"  Get In Touch"
 
 #define FONT_BOLD @"Quicksand-Bold"
 #define FONT_BOLDITALIC @"Quicksand-BoldItalic"

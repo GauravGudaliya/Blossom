@@ -16,6 +16,8 @@
 
 #import "MenuCell.h"
 #import "OrderCell.h"
+#import "OrderDetailCell.h"
+#import "OrderDetailViewController.h"
 
 #import "RESideMenu.h"
 #import "AppDelegate.h"
