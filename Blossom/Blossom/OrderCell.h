@@ -11,5 +11,6 @@
 @interface OrderCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *lbShop;
 @property (weak, nonatomic) IBOutlet UILabel *lbFlowerName;
+@property (weak, nonatomic) IBOutlet UILabel *lbPrice;
 @property (weak, nonatomic) IBOutlet UIImageView *ivFlowerImage;
 @end

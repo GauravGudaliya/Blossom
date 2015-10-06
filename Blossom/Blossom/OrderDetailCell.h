@@ -10,6 +10,7 @@
 #import "Header.h"
 
 @interface OrderDetailCell : UICollectionViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *ivFlowerImg;
 @property (weak, nonatomic) IBOutlet UILabel *lblFlowerHeader;
 @property (weak, nonatomic) IBOutlet UILabel *lblFlowerSubHeader;

@@ -58,4 +58,9 @@
 {
     
 }
+- (IBAction)btnEditProfileAction:(id)sender
+{
+    EditProfileViewController *vc=[self.storyboard instantiateViewControllerWithIdentifier:@"EditProfileViewController"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

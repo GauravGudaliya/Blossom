@@ -9,5 +9,4 @@
 #ifndef Blossom_Constants_h
 #define Blossom_Constants_h
 
-
 #endif

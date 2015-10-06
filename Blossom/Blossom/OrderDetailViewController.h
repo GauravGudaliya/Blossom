@@ -13,7 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *cvOrderDetail;
 @property (weak, nonatomic) IBOutlet UIPageControl *pcOrderDetail;
-
+@property (strong,nonatomic)PFObject *collectionId;
 - (IBAction)btnBackTap:(UIButton *)sender;
 
 @end

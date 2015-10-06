@@ -9,6 +9,9 @@
 #ifndef Blossom_Strings_h
 #define Blossom_Strings_h
 
+#define kParseAppId @"EMjOySJlqSKT5KY0ERE6ew4yq6Jl8HVBZbJNT1Ar"
+#define kParseClientKey @"DYgaoLicLw867V9TIp9AoZ6fex7Z6TOaV1CTnSaU"
+
 #define GET_STARTED_TITLE @"Get Started"
 #define NEXT_TITLE @"Next"
 #define INTRO2_TITLE @"On Demand Flowers"
@@ -27,6 +30,7 @@
 #define BTNCLEAR_ALL @" Clear All"
 #define BTNPROFILE @"  Profile"
 #define BTNGETINTOUCH @"  Get In Touch"
+#define BTNCANCLE @" Cancle"
 
 #define FONT_BOLD @"Quicksand-Bold"
 #define FONT_BOLDITALIC @"Quicksand-BoldItalic"
@@ -35,4 +39,9 @@
 #define FONT_LIGHTITALIC @"Quicksand-LightItalic"
 #define FONT_REGULAR @"Quicksand-Regular"
 
+#define kSOME_ERROR @"Something went wrong!"
+
+#define kOCCASION_CLASS @"Occasion"
+#define kCOLLECTION_CLASS @"Collection"
+#define kCOLOR_CLASS @"Color"
 #endif 

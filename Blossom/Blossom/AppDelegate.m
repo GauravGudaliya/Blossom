@@ -7,20 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "Header.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse enableLocalDatastore];
+    [Parse setApplicationId:kParseAppId
+                  clientKey:kParseClientKey];
+    
+    [[SVProgressHUD appearance] setBackgroundColor:[UIColor colorWithRed:48.0/255.0 green:96.0/255.0 blue:191.0/255.0 alpha:1.0]];
+    
+    [[SVProgressHUD appearance] setForegroundColor:[UIColor whiteColor]];
+
     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+
     return YES;
 }
-
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -42,5 +49,4 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 @end

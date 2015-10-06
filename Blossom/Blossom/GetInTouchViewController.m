@@ -47,4 +47,10 @@
 {
     [self presentLeftMenuViewController:sender];
 }
+- (IBAction)btnPrivacyPolicyAction:(id)sender
+{
+    PrivacyPolicyViewController *vc=[self.storyboard instantiateViewControllerWithIdentifier:@"PrivacyPolicyViewController"];
+    [self.navigationController pushViewController:vc animated:YES ];
+    
+}
 @end

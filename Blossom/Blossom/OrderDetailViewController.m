@@ -24,30 +24,29 @@
     self.navigationController.navigationBarHidden = YES;
     self.currentIndex =0;
     [self collectionViewInitializations];
-    
-    flowerArr =[NSMutableArray array];
-    
-    for (int i=0; i<4; i++)
-    {
-        NSMutableDictionary *flowerDict=[NSMutableDictionary dictionary];
-        
-        [flowerDict setObject:@"noOrdersImage.png" forKey:@"flowerImg"];
-        [flowerDict setObject:@"The Cooper" forKey:@"flowerHeader"];
-        [flowerDict setObject:@"AED250" forKey:@"flowerSubHeader"];
-        [flowerDict setObject:@"12 red roses and 15 white roses" forKey:@"flowerTitle"];
-        [flowerDict setObject:@"flower are perfect for everyone again flower are perfect for everyone" forKey:@"flowerDesc"];
-        [flowerArr addObject:flowerDict];
+    [SVProgressHUD show];
+    PFQuery *query =[PFQuery queryWithClassName:@"Products"];
+    [query whereKey:@"productCollection" equalTo: _collectionId];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+     {
+          [SVProgressHUD dismiss];
+         if (!error)
+         {
+             flowerArr=[[NSMutableArray alloc] initWithArray:objects];
+             [_cvOrderDetail reloadData];
+             _pcOrderDetail.numberOfPages=flowerArr.count;
+         }
+         else
+         {
+             [SVProgressHUD showErrorWithStatus:kSOME_ERROR];
+         }
+     }];
     }
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 #pragma mark - UICollectionViewDataSource, UICollectionViewDelegate
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return 1;
-}
+
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return [flowerArr count];
@@ -56,11 +55,16 @@
 {
     OrderDetailCell *cell = (OrderDetailCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
-    cell.ivFlowerImg.image=[UIImage imageNamed:[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"flowerImg"]];
-    cell.lblFlowerHeader.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"flowerHeader"];
-    cell.lblFlowerSubHeader.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"flowerSubHeader"];
-    cell.lblFlowerTitle.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"flowerTitle"];
-    cell.lblFlowerDesc.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"flowerDesc"];
+    PFFile *userImageFile =[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"productImage"];
+    [userImageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+        if (!error) {
+            cell.ivFlowerImg.image = [UIImage imageWithData:imageData];
+        }
+    }];
+    cell.lblFlowerHeader.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"productTitle"];
+    cell.lblFlowerSubHeader.text=[NSString stringWithFormat:@"AED%@",[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"price"]];
+    cell.lblFlowerTitle.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"productDetails"];
+    cell.lblFlowerDesc.text=[[flowerArr objectAtIndex:indexPath.row] objectForKey:@"productDescription"];
     return cell;
 }
 //----------------------------CALLED WHILE PAGGING --------------------
@@ -69,6 +73,7 @@
     self.pcOrderDetail.currentPage = self.currentIndex;
 }
 //----------------------------SCROLLVIEW DELEGATE--------------------------
+
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     NSInteger currentIndex = self.cvOrderDetail.contentOffset.x / self.cvOrderDetail.frame.size.width;

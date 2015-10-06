@@ -9,21 +9,32 @@
 #ifndef Blossom_Header_h
 #define Blossom_Header_h
 
+#import <Parse/Parse.h>
+
 #import "Constants.h"
 #import "Colors.h"
 #import "Device.h"
 #import "Strings.h"
 
-#import "MenuCell.h"
-#import "OrderCell.h"
-#import "OrderDetailCell.h"
-#import "OrderDetailViewController.h"
-
-#import "RESideMenu.h"
 #import "AppDelegate.h"
 #import "IntroScreenController.h"
+#import "RESideMenu.h"
 #import "SideBarController.h"
-#import "ThemeViewController.h"
-#import "IntroCell.h"
+#import "YSLContainerViewController.h"
 
+#import "SVProgressHUD.h"
+#import "InfinitePagingView.h"
+#import "UIColor+HexString.h"
+#import "OrderDetailViewController.h"
+#import "ThemeViewController.h"
+#import "EditProfileViewController.h"
+#import "PrivacyPolicyViewController.h"
+#import "HomeController.h"
+#import "OrderViewController.h"
+
+#import "IntroCell.h"
+#import "OrderCell.h"
+#import "OrderDetailCell.h"
+#import "MenuCell.h"
+#import "OrderHistoryCell.h"
 #endif
