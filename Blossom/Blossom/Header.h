@@ -31,6 +31,10 @@
 #import "PrivacyPolicyViewController.h"
 #import "HomeController.h"
 #import "OrderViewController.h"
+#import "NewReminderController.h"
+#import "PersonalMessageController.h"
+#import "ReciepientDetailController.h"
+
 
 #import "IntroCell.h"
 #import "OrderCell.h"

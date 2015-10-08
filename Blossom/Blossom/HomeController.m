@@ -165,7 +165,7 @@
                                                                                 parentViewController:self];
     self.containerVC.delegate = self;
     
-    self.containerVC.menuItemFont = [UIFont fontWithName:FONT_REGULAR size:20];
+    self.containerVC.menuItemFont = [UIFont fontWithName:FONT_REGULAR size:24];
     self.containerVC.menuItemTitleColor = kMENU_NORMAL_TEXT_COLOR;
     
     self.containerVC.menuItemSelectedTitleColor = kMENU_SELECTED_TEXT_COLOR;

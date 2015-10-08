@@ -31,6 +31,7 @@
 #define BTNPROFILE @"  Profile"
 #define BTNGETINTOUCH @"  Get In Touch"
 #define BTNCANCLE @" Cancle"
+#define BTNSKIP @" Skip"
 
 #define FONT_BOLD @"Quicksand-Bold"
 #define FONT_BOLDITALIC @"Quicksand-BoldItalic"

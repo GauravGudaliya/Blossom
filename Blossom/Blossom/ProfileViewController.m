@@ -8,7 +8,7 @@
 
 #import "ProfileViewController.h"
 #import "Header.h"
-@interface ProfileViewController ()
+@interface ProfileViewController ()<UITextFieldDelegate>
 {
     UIBarButtonItem *btnProfileBar;
     UIBarButtonItem *btnLogoutBar;
@@ -62,5 +62,14 @@
 {
     EditProfileViewController *vc=[self.storyboard instantiateViewControllerWithIdentifier:@"EditProfileViewController"];
     [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)btnActionReminder:(id)sender {
+    NewReminderController *vc=[self.storyboard instantiateViewControllerWithIdentifier:@"NewReminderController"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 @end

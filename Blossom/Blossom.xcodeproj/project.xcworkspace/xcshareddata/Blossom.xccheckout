@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9B3FBE44-0DAD-4A6D-9834-A213BE5E2785</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Blossom</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7AA6DBD299BDE83064C905C78FD9E639CF4DFCE4</key>
 		<string>https://github.com/GauravGudaliya/Blossom.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Blossom/Blossom.xcodeproj/project.xcworkspace</string>
+	<string>Blossom/Blossom.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7AA6DBD299BDE83064C905C78FD9E639CF4DFCE4</key>

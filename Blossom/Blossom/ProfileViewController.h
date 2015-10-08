@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController{
+    
+}
+- (IBAction)btnActionReminder:(id)sender;
 
 @end
